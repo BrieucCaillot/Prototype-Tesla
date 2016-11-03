@@ -1,19 +1,48 @@
+/*
+
+#title            : Exercise 3: WEBSITE TESLA
+#description      : TESLA's Website HTML Proudly made by:
+#author           : Brieuc CAILLOT
+#date             : 20161103
+#version          : Probably the lastest version
+#usage            : HTML
+#notes            : Only working on search engine
+
+*/
+html,body{
+	padding: 0;
+	margin: 0;
+}
+
+@font-face {
+    font-family: "PFBeauSansPro";
+    src: url('arretezvouspolice.eot') format('eot'),
+         url('arretezvouspolice.woff') format('woff'),
+         url('arretezvouspolice.ttf') format('truetype'),
+         url('arretezvouspolice.svg') format('svg');
+}
+
 *{
 	font-family: Myriad Pro, sans-serif !important;	
 }
 
-					/* FIRST BACKGROUND */
+					/* FIRST BLOC */
 
 #bloc1{
-	background: url("logos/headerwall.png");
+	background: url(logos/headerwall.png) no-repeat;
+	background-size: 100%;
+	width: 100%;
+	height: 920px;
+
 }
 
-/* HEADER */
+	/* HEADER */
 
 #header{
 	overflow: hidden;
 	margin: 0 50px;
 	padding-top: 10px;
+	margin-bottom: 38px;
 }
 
 #header>img{
@@ -23,9 +52,9 @@
 #header ul{
 	float: right;
 	overflow: hidden;
-
+	padding-right: 27px;
 	vertical-align: middle;
-	line-height: 128px;
+	line-height: 82px;
 }
 
 #header ul li{
@@ -39,11 +68,15 @@
 	color: #adadad;
 }
 
-/* MID BLOC*/
+#header ul li a:hover{
+	color: #ffffff;
+}
+
+	/* MID BLOC WITH BUTTONS AND TEXT*/
 
 .middle{
 	overflow: hidden;
-	margin: 80px 20px;
+	margin: 9px 20px 52px
 }
 
 .dotleft{
@@ -58,30 +91,41 @@
 	margin-top: 15px;			
 }
 
-.middle .bullets{
-	width: 50%;
-	margin-right: 0px;
+.middle .bullets li:hover {
+    list-style-image: url("logos/hoverdot.png");
+	width: 40px;
+	margin-left: 40px;
+	margin-top: 15px;			
 }
 
-.middle-content{
-	float: left;
-	width: 20%;
-	margin-right: 15%;	
-	padding-bottom: 160px;
+.middle .bullets{
+	width: 60%;
+    float: left;
+    height: 260px;
+    margin-top: 100px;
+    margin-left: 20px;
+
+}
+
+.middle-text{
+	float: right;
+	margin-right: 65px;
+	width: 33%;	
+	padding-bottom: 143px;
 	background: url(logos/bullets_bottom.png) no-repeat bottom left;
 }
 
-.middle-content h1{
+.middle-text h1{
 	color:white;
 	font-size: 36px;
 }
 
-.middle-content p{
+.middle-text p{
 	color: #adadad;
 	margin: 20px 0;
 }
 
-.middle-content a{
+.middle-text a{
 	color: #ffffff;
 	font-size: 25px;
 	text-decoration: none;
@@ -92,3 +136,204 @@
     display: inline-block;
     width: 120px
 }
+
+	/* MIDDLE BLOC BOTTOM */
+
+		
+		/* AVAILABLE SEAT IN DA TESLA*/
+
+.middle-bottom1{
+	background: url(logos/bullets_top1.png) no-repeat 190px 12px;
+	float:left;
+	width: 425px;
+	height: 300px;
+
+}
+
+.middle-bottom1 .number1{
+	position: relative;
+    left: 102px;
+    top: 165px;
+    font-size: 125px;
+    width: 200px;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.middle-bottom1 .number2{
+	position: relative;
+    left: 108px;
+    top: 145px;
+    width: 200px;
+    color: white;
+}
+
+		/* MAX ACCELERATION */
+
+.middle-bottom2{
+	background: url(logos/bullets_top.png) no-repeat 190px 33px;
+	float:left;
+	width: 425px;
+	height: 300px;
+
+}
+
+.middle-bottom2 .number1{
+	position: relative;
+    left: 102px;
+    top: 165px;
+    font-size: 125px;
+    width: 200px;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.middle-bottom2 .number1-2{
+	position: relative;
+   	left: 255px;
+    top: 20px;
+    font-size: 65px;
+    width: 200px;
+    color: white;
+    margin-bottom: 16px;
+}
+
+
+.middle-bottom2 .number2{
+	position: relative;
+    left: 108px;
+    top: 59px;
+    width: 200px;
+    color: white;
+}
+
+		/* TESLA'S RANGE */
+
+.middle-bottom3{
+	background: url(logos/bullets_top1.2.png) no-repeat 190px 21px;
+	float:left;
+	width: 425px;
+	height: 300px;
+}
+
+.middle-bottom3 .number1{
+	font-family: 'PFBeauSansPro', Myriad Pro;
+	position: relative;
+    left: 102px;
+    top: 165px;
+    font-size: 125px;
+    width: 200px;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.middle-bottom3 .number1-2{
+	position: relative;
+    left: 288px;
+    top: 8px;
+    font-size: 125px;
+    width: 200px;
+    color: white;
+    margin-bottom: 16px;
+  }
+
+.middle-bottom3 .number2{
+	position: relative;
+    left: 108px;
+    top: 2px;
+    width: 200px;
+    color: white;
+}
+
+					/* SECOND BLOC*/
+
+/* FIRST CASE*/
+
+#bloc2{
+	background: url(logos/bloc2bg.png) no-repeat;
+	width: 100%;
+	height: 320px;
+	color: white;
+	clear: both;
+}
+
+.case1 .title{
+	font-size: 37px;
+	font-weight: bold;
+    padding: 75px 105px 16px;
+}
+
+.case1 .text{
+	line-height: 26px;
+    font-size: 15px;
+    width: 536px;
+    padding: 0px 105px 0px;
+}
+
+/* SECOND CASE*/
+
+#bloc3{
+	clear: both;
+	float: left;
+	background: url(logos/interriorbg.png) no-repeat;
+	width: 1300px;
+	height: 320px;
+	color: white;
+}
+
+.case2 .title{
+	font-size: 37px;
+	font-weight: bold;
+    padding: 75px 105px 16px;
+    margin: -5px 0px 0px 640px;
+}
+
+.case2 .text{
+	line-height: 26px;
+    font-size: 15px;
+    width: 536px;
+    padding: 10px 105px 16px;
+    margin: -5px 0px 0px 640px;
+}
+
+					/* LAST BLOC */
+
+#joinus{
+	float: left;
+	background-color: #ffffff;
+	height: 190px;
+	width:100%;
+}
+
+#joinus .buttonbot p{
+	z-index: 1;
+    color: white;
+    position: absolute;
+    left: 533px;
+    font-size: 21px;
+    margin-top: 61px;
+}
+
+#joinus .buttonbot img{
+	width: 300px;
+	padding: 43px 0px 17px 485px;
+}
+
+#joinus .textbot p{
+	padding-left: 398px;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.end{
+	background-color: #62647D;
+	height: 66px;
+	margin-top: 42px;
+}
+
+.end img{
+	padding: 13px 0px 13px 600px;
+}
+
+
+
