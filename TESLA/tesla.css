@@ -9,13 +9,9 @@
 #notes            : Only working on search engine
 
 */
-html,body{
-	padding: 0;
-	margin: 0;
-}
 
 @font-face {
-    font-family: "PFBeauSansPro";
+    font-family: "police";
     src: url('arretezvouspolice.eot') format('eot'),
          url('arretezvouspolice.woff') format('woff'),
          url('arretezvouspolice.ttf') format('truetype'),
@@ -32,7 +28,7 @@ html,body{
 	background: url(logos/headerwall.png) no-repeat;
 	background-size: 100%;
 	width: 100%;
-	height: 920px;
+	height: 919px;
 
 }
 
@@ -51,7 +47,6 @@ html,body{
 
 #header ul{
 	float: right;
-	overflow: hidden;
 	padding-right: 27px;
 	vertical-align: middle;
 	line-height: 82px;
@@ -86,7 +81,6 @@ html,body{
 
 .middle .bullets li{
     list-style-image: url("logos/dotleft.png");
-	width: 40px;
 	margin-left: 40px;
 	margin-top: 15px;			
 }
@@ -99,19 +93,17 @@ html,body{
 }
 
 .middle .bullets{
-	width: 60%;
     float: left;
     height: 260px;
-    margin-top: 100px;
-    margin-left: 20px;
+    margin-top: 8%;
+    margin-left: 2%;
 
 }
 
 .middle-text{
 	float: right;
-	margin-right: 65px;
-	width: 33%;	
-	padding-bottom: 143px;
+	margin-right: 5%;	
+	padding-bottom: 9%;
 	background: url(logos/bullets_bottom.png) no-repeat bottom left;
 }
 
@@ -123,6 +115,7 @@ html,body{
 .middle-text p{
 	color: #adadad;
 	margin: 20px 0;
+	line-height: 26px;
 }
 
 .middle-text a{
@@ -145,7 +138,7 @@ html,body{
 .middle-bottom1{
 	background: url(logos/bullets_top1.png) no-repeat 190px 12px;
 	float:left;
-	width: 425px;
+	width: 33%;
 	height: 300px;
 
 }
@@ -173,7 +166,7 @@ html,body{
 .middle-bottom2{
 	background: url(logos/bullets_top.png) no-repeat 190px 33px;
 	float:left;
-	width: 425px;
+	width: 33%;
 	height: 300px;
 
 }
@@ -212,12 +205,12 @@ html,body{
 .middle-bottom3{
 	background: url(logos/bullets_top1.2.png) no-repeat 190px 21px;
 	float:left;
-	width: 425px;
+	width: 33%;
 	height: 300px;
 }
 
 .middle-bottom3 .number1{
-	font-family: 'PFBeauSansPro', Myriad Pro;
+	font-family: "police", Myriad Pro;
 	position: relative;
     left: 102px;
     top: 165px;
@@ -250,53 +243,86 @@ html,body{
 /* FIRST CASE*/
 
 #bloc2{
-	background: url(logos/bloc2bg.png) no-repeat;
 	width: 100%;
+}
+
+#bloc2 .case1{
+	background: url(logos/bullets_right_long.png) no-repeat 195% 25%;
+	z-index: 1;
+}
+
+#bloc2 .case1{
+	float: left;
+	background-color: #62647D;
+	width: 50%;
 	height: 320px;
 	color: white;
 	clear: both;
 }
 
-.case1 .title{
-	font-size: 37px;
-	font-weight: bold;
-    padding: 75px 105px 16px;
+#bloc2 .case1 .title{
+    font-size: 37px;
+    font-weight: bold;
+    padding: 75px 0px 16px 13%;
 }
 
-.case1 .text{
+#bloc2 .case1 .text{
 	line-height: 26px;
-    font-size: 15px;
-    width: 536px;
-    padding: 0px 105px 0px;
+    font-size: 14px;
+    padding-left: 13%;
 }
 
-/* SECOND CASE*/
+/*SECOND CASE */
+
+#bloc2 .case2 img{
+	float: right;
+	width: 50%;
+}
+
+					/* THIRD BLOC */
 
 #bloc3{
 	clear: both;
+	width: 100%
+}
+
+/* FIRST CASE*/
+
+#bloc3 .case1 img{
+	width: 50%;
 	float: left;
-	background: url(logos/interriorbg.png) no-repeat;
-	width: 1300px;
+}
+
+/* SECOND CASE */
+
+#bloc3 .case2{
+	background: url(logos/bullets_left_short.png) no-repeat -20% 25%;
+	z-index: 1;
+}
+
+#bloc3 .case2{
+	float: right;
+	background-color: #30313E;
+	width: 50%;
 	height: 320px;
 	color: white;
 }
-
-.case2 .title{
+#bloc3 .case2 .title{
+	color: white;
 	font-size: 37px;
 	font-weight: bold;
-    padding: 75px 105px 16px;
-    margin: -5px 0px 0px 640px;
+	padding: 75px 0px 16px 13%;
 }
 
-.case2 .text{
+#bloc3 .case2 .text{
+	color: white;
 	line-height: 26px;
     font-size: 15px;
     width: 536px;
-    padding: 10px 105px 16px;
-    margin: -5px 0px 0px 640px;
+    padding-left: 13%;
 }
 
-					/* LAST BLOC */
+					/* END BLOC */
 
 #joinus{
 	float: left;
@@ -309,14 +335,14 @@ html,body{
 	z-index: 1;
     color: white;
     position: absolute;
-    left: 533px;
+    left: 42%;
     font-size: 21px;
     margin-top: 61px;
 }
 
 #joinus .buttonbot img{
 	width: 300px;
-	padding: 43px 0px 17px 485px;
+	padding: 43px 0px 17px 38%;
 }
 
 #joinus .textbot p{
@@ -327,12 +353,13 @@ html,body{
 
 .end{
 	background-color: #62647D;
+	width: 100%
 	height: 66px;
 	margin-top: 42px;
 }
 
 .end img{
-	padding: 13px 0px 13px 600px;
+	padding: 13px 0px 13px 48%;
 }
 
 
