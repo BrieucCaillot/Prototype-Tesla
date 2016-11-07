@@ -188,7 +188,7 @@ body{
 .middle-bottom2 .number1-2{
 	font-family: "police", sans-serif;
 	position: relative;
-   	left: 255px;
+   	left: 269px;
     top: 20px;
     font-size: 65px;
     width: 200px;
@@ -212,6 +212,7 @@ body{
 	float:left;
 	width: 33%;
 	height: 300px;
+	overflow: hidden;
 }
 
 .middle-bottom3 .number1{
