@@ -11,17 +11,13 @@
 */
 
 body{
-	font-family: Myriad Pro, sans-serif;	
+	font-family: Myriad Pro, sans-serif;
+	height: 100%
 }
 
 @font-face{ 
 	font-family:"police";
-	src: url("police/arretezvouspolice.ttf");
-}
-
-@font-face{
-	font-family: "police";
-	font-weight: bold
+	src: url("../police/arretezvouspolice.ttf");
 }
 
 					/* FIRST BLOC */
@@ -49,14 +45,14 @@ body{
 
 #header ul{
 	float: right;
-	padding-right: 27px;
+	padding-right: 29px;
 	vertical-align: middle;
 	line-height: 82px;
 }
 
 #header ul li{
 	float: left;
-	margin: 0 20px;
+	margin: 0 30px;
 }
 
 #header ul li a{
@@ -104,9 +100,10 @@ body{
 
 .middle-text{
 	float: right;
-	margin-right: 5%;	
+	margin-right: 8%;	
 	padding-bottom: 9%;
 	background: url(../logos/bullets_bottom.png) no-repeat bottom left;
+	padding-top: 3%;
 }
 
 .middle-text h1{
@@ -151,6 +148,7 @@ body{
     left: 102px;
     top: 165px;
     font-size: 125px;
+    font-weight: 100;
     width: 200px;
     color: white;
     margin-bottom: 16px;
@@ -180,6 +178,7 @@ body{
     left: 102px;
     top: 165px;
     font-size: 125px;
+    font-weight: 100;
     width: 200px;
     color: white;
     margin-bottom: 16px;
@@ -217,6 +216,7 @@ body{
 
 .middle-bottom3 .number1{
 	font-family: "police", sans-serif;
+	font-weight: 100;
 	position: relative;
     left: 102px;
     top: 156px;
@@ -227,7 +227,7 @@ body{
 }
 
 .middle-bottom3 .number1-2{
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: "police", sans-serif;
     position: relative;
     left: 312px;
     font-size: 92px;
@@ -250,6 +250,7 @@ body{
 
 #bloc2{
 	width: 100%;
+	height: 100%;
 }
 
 #bloc2 .case1{
@@ -261,7 +262,7 @@ body{
 	float: left;
 	background-color: #62647D;
 	width: 50%;
-	height: 320px;
+	height: 360px;
 	color: white;
 	clear: both;
 }
@@ -269,13 +270,13 @@ body{
 #bloc2 .case1 .title{
     font-size: 37px;
     font-weight: bold;
-    padding: 75px 0px 16px 13%;
+    padding: 85px 0px 16px 19%;
 }
 
 #bloc2 .case1 .text{
 	line-height: 26px;
     font-size: 14px;
-    padding-left: 13%;
+    padding-left: 19.5%;
 }
 
 /*SECOND CASE */
@@ -310,7 +311,7 @@ body{
 	float: right;
 	background-color: #30313E;
 	width: 50%;
-	height: 320px;
+	height: 360px;
 	color: white;
 }
 #bloc3 .case2 .title{
@@ -351,9 +352,13 @@ body{
 }
 
 #joinus .textbot p{
-	padding-left: 398px;
+	position: absolute;
+    top: 314%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-style: italic;
     font-size: 14px;
+    cursor: pointer;
 }
 
 #joinus .buttonbot a { 
